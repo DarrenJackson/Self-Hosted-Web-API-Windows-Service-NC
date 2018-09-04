@@ -1,22 +1,21 @@
-﻿using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc;
-
-namespace ExampleService.Service.Controllers
+﻿namespace ExampleService.Api.Controllers.Controllers
 {
+	using System.Collections.Generic;
+	using Microsoft.AspNetCore.Mvc;
+
 	[Route("api/[controller]")]
 	[ApiController]
 	public class ValuesController : ControllerBase
 	{
-		// http://localhost:5000/api/values/hello
 		[HttpGet]
-		[Route("hello")]
+		[Route("api/hello")]
         public IEnumerable<string> HelloWorld()
         {
             return new string[] { "Hello", "World!" };
         }
 
+
 		// GET api/values
-		// http://localhost:5000/api/values
 		[HttpGet]
 		public ActionResult<IEnumerable<string>> Get()
 		{
