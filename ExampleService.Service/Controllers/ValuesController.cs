@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc;
-
-namespace ExampleService.Service.Controllers
+﻿namespace ExampleService.Service.Controllers
 {
+	using System.Collections.Generic;
+	using Microsoft.AspNetCore.Mvc;
+
 	[Route("api/[controller]")]
 	[ApiController]
 	public class ValuesController : ControllerBase
